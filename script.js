@@ -51,7 +51,7 @@ function toggleNavbar() {
       if (username === 'user' && password === 'password') {
         alert('Login successful!');
         closeLoginPopover(); // Close the popover after successful login
-        profilePicture.src = "./asset/1656.png"; // Update profile picture
+        profilePicture.src = "1656.png"; // Update profile picture
       } else {
         alert('Invalid username or password. Please try again.');
       }
