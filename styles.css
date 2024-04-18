@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: red;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .brand-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .profile {
+    margin-left: 20px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+  }
+  
+  .landing-page {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .landing-page h1 {
+    color: red;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+  
+    .toggle-button {
+      display: flex;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      background-color: red;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar-links.active a {
+      margin: 10px;
+    }
+  }
+  
+  /* Existing CSS code remains the same */
+
+.search-container {
+    position: relative;
+  }
+  
+  .search-bar {
+     display: none;
+   /* position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%; */
+    padding: 10px;
+    /* border: none;
+    background-color: transparent;
+    color: white; */
+    transition: all 0.3s ease;
+  }
+
+  .search-bar.active {
+    display: inline-block; /* or any other display property you prefer */
+  }
+  
+  .search-icon {
+    padding-top: 8px;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .search-icon path {
+    transition: fill 0.3s ease; /* Add transition for smooth color change */
+  }
+  
+  .search-bar.active ~ .search-icon path {
+    fill: black; /* Change the color of the search icon when search bar is active */
+  }
+  
+  .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .error-page{
+    text-align: center;
+  }
+  
+
+  .login-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Login Popover */
+  #login-popover1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .login-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
